@@ -12,7 +12,7 @@ class FoodHomePage extends StatelessWidget {
         child: Obx(() => ListView.builder(
           itemCount: _contrroller.ListData.length,
               itemBuilder: (context, index) => ListTile(
-                title: Text(_contrroller.ListData[index].name),
+                title: Text(_contrroller.ListData[index].name),subtitle: Image(image: NetworkImage(_contrroller.ListData[index].imageUrl)),
               ),
             )),
       ),
