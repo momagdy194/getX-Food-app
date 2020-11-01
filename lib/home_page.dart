@@ -10,9 +10,14 @@ class FoodHomePage extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Obx(() => ListView.builder(
-          itemCount: _contrroller.ListData.length,
-              itemBuilder: (context, index) => ListTile(
-                title: Text(_contrroller.ListData[index].name),subtitle: Image(image: NetworkImage(_contrroller.ListData[index].imageUrl)),
+              itemCount: _contrroller.ListData.length,
+              itemBuilder: (context, index) => Card(
+                child: ListTile(
+                  title: Text(_contrroller.ListData[index].name),
+                  subtitle: Image(
+                      image:
+                          NetworkImage(_contrroller.ListData[index].imageUrl)),
+                ),
               ),
             )),
       ),
