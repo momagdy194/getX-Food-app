@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:login_getx_and_frach_data/details_Screen.dart';
 import 'controller.dart';
 
 class FoodHomePage extends StatelessWidget {
@@ -13,6 +14,11 @@ class FoodHomePage extends StatelessWidget {
               itemCount: _contrroller.ListData.length,
               itemBuilder: (context, index) => Card(
                 child: ListTile(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+//                        builder: (context) => DetailsScreen(steps),
+                      )),
                   title: Text(_contrroller.ListData[index].name),
                   subtitle: Image(
                       image:
