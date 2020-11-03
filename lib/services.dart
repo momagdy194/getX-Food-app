@@ -1,29 +1,27 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
+import 'package:login_getx_and_frach_data/controller.dart';
 
-import 'controller.dart';
 import 'foodModel.dart';
 
+class Services
+{
+static MyFoodController _controller=Get.find<MyFoodController>();
 
-class ServicesData {
+static  Future <List<FoodModel>> fetchData()async{
+    String url="https://www.derastak.com/registration%20steps/food.json";
 
- static MyFoodContrroller to =  Get.find<MyFoodContrroller>();
+    Dio dio=Dio();
 
-  static Future<List<FoodModel>> apiGetUserList() async {
-    String url = "https://www.derastak.com/registration%20steps/food.json";
-    Dio dio = Dio();
-    Response response = await dio.get(url);
+    Response response=await dio.get(url);
 
-    try {
-      if (response.statusCode == 200) {
-        for (var item in response.data) {
-          to.ListData.add(FoodModel.fromJson(item));
-        }
-        return to.ListData;
+    if(response.statusCode==200){
+      for(var item in response.data){
+        _controller.listData.add(FoodModel.fromJson(item));
       }
-    } catch (e) {
-      print(e);
+      return _controller.listData;
     }
   }
+
 
 }

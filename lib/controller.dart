@@ -1,17 +1,15 @@
-import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-
-import 'foodModel.dart';
+import 'package:login_getx_and_frach_data/foodModel.dart';
 import './services.dart';
-
-class MyFoodContrroller extends GetxController {
-  var ListData = List<FoodModel>().obs;
-
-  @override
+class MyFoodController extends GetxController{
+List<FoodModel> listData=List <FoodModel>().obs;
 
 
+@override
   void onInit() {
-    ServicesData.apiGetUserList();
+
+  Services.fetchData();
     super.onInit();
   }
+
 }
