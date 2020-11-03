@@ -14,7 +14,7 @@ class FoodHomePage extends StatelessWidget {
                 title: Text(_controller.listData[index].name),
                 subtitle: Image(
                     image: NetworkImage(_controller.listData[index].imageUrl)),
-              leading: Icon(Icons.restaurant),),
+              leading: Icon(Icons.restaurant ),),
             )));
   }
 }
