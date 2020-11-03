@@ -23,6 +23,7 @@ environment:
 dependencies:
   dio: ^3.0.10
   get: ^3.15.0
+  responsive_widget: ^2.0.1
 
 
   flutter:
