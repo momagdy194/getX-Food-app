@@ -14,7 +14,6 @@ static  get  to =>Get.find<MyFoodController>();
 
 @override
   void onInit() {
-
   DataServices.fetchData();
     super.onInit();
   }

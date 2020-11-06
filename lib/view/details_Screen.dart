@@ -1,18 +1,19 @@
-
 import 'package:flutter/material.dart';
 import 'package:responsive_widget/responsive_widget.dart';
 
 class DetailsScreen extends StatelessWidget {
   final name, imageURL;
 
- final List<String> stepsL;
+  final List<String> stepsL;
 
   DetailsScreen(this.name, this.stepsL, this.imageURL);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(name),),
+      appBar: AppBar(
+        title: Text(name),
+      ),
       body: ResponsiveUi(
         builder: (context, size) => ListView(
           children: [

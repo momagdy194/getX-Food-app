@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "191235561765",
+    "firebase_url": "https://auth-53557.firebaseio.com",
+    "project_id": "auth-53557",
+    "storage_bucket": "auth-53557.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191235561765:android:7a15e378bfccfa7f1622cc",
+        "android_client_info": {
+          "package_name": "com.example.login_getx_and_frach_data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191235561765-ecqn6clbcu21l2cjs5jnl4rr1s2u0lde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMwOnq5D--262iY7b5WW-MS87z-yZNnXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191235561765-ecqn6clbcu21l2cjs5jnl4rr1s2u0lde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
